@@ -30,6 +30,10 @@ const webpackConfig = (): Configuration => ({
         test: /\.s?css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   devServer: {
