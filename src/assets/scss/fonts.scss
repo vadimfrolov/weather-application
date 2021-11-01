@@ -1,13 +1,13 @@
 $roboto-font-path: '../fonts';
 
 @font-face {
-  src: url(#{$roboto-font-path}/Roboto-Regular.ttf) format('truetype');
+  src: url(#{$roboto-font-path}/Roboto-Regular.woff2) format('woff2');
   font-family: 'Roboto';
   font-weight: 400;
 }
 
 @font-face {
-  src: url(#{$roboto-font-path}/Roboto-Bold.ttf) format('truetype');
+  src: url(#{$roboto-font-path}/Roboto-Bold.woff2) format('woff2');
   font-family: 'Roboto';
   font-weight: 700;
 }

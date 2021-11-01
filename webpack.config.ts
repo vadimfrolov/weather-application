@@ -4,6 +4,8 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
+const Dotenv = require('dotenv-webpack');
+
 const webpackConfig = (): Configuration => ({
   entry: './src/index.tsx',
   ...(process.env.production || !process.env.development ? {} : {devtool: 'eval-source-map'}),
@@ -12,10 +14,15 @@ const webpackConfig = (): Configuration => ({
     extensions: ['.ts', '.tsx', '.js'],
     plugins: [new TsconfigPathsPlugin({configFile: './tsconfig.json'})],
   },
+
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'build.js',
   },
+  experiments: {
+    asset: true,
+  },
+
   module: {
     rules: [
       {
@@ -36,6 +43,9 @@ const webpackConfig = (): Configuration => ({
       },
     ],
   },
+  performance: {
+    hints: false,
+  },
   devServer: {
     port: 3000,
     open: true,
@@ -45,8 +55,9 @@ const webpackConfig = (): Configuration => ({
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    new DefinePlugin({
-      'process.env': process.env.production || !process.env.development,
+    new Dotenv({
+      path: './.env',
+      safe: true,
     }),
     new ForkTsCheckerWebpackPlugin({
       eslint: {
