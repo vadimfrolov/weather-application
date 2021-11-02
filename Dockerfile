@@ -1,5 +1,5 @@
 FROM node:14.14.0-alpine as builder
-EXPOSE 8080
+EXPOSE 80
 WORKDIR /app
 COPY package.json /app/package.json
 RUN npm install
