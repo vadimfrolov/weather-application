@@ -37,3 +37,10 @@ weather-application
 ├── tsconfig.json               # Typescript settings
 
 ```
+
+## Road map
+- [ ] add city input
+- [ ] create demo on Heroku
+- [ ] create Gitlab CI/CD pipeline to Github actions and dockerhub registry.
+- [ ] use Teleport API for city names fetching
+
