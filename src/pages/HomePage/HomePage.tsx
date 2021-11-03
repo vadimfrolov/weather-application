@@ -6,6 +6,7 @@ import BigWeatherIcon from '../../components/BigWeatherIcon/BigWeatherIcon';
 import BigCityDateCard from '../../components/BigCityDateCard/BigCityDateCard';
 import BigWeatherCard from '../../components/BigWeatherCard/BigWeatherCard';
 import HourWeatherCard from '../../components/HourWeatherCard/HourWeatherCard';
+import ButtonFetchData from '../../components/ButtonFetchData/ButtonFetchData';
 
 import {fetchCurrentWeather} from '../../store/thunks/fetchCurrentWeather';
 import {RootState} from '../../store/store';
@@ -64,7 +65,7 @@ const Homepage = () => {
 
   return (
     <>
-      {weatherData.list === null && <button onClick={fetchData}>fetch data</button>}
+      {weatherData.list === null && <ButtonFetchData fetchWeatherData={fetchData} />}
       <div className="wrapper top-line">
         {fetchDays &&
           fetchDays.map((item: WeatherListItem) => (
