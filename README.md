@@ -31,7 +31,9 @@ cd weather-application
 
 2. Create .env file in root folder with your key
 
-```typescript
+> This version is using https://samples.openweathermap.org/data/2.5/forecast, so use appropriate key
+
+```
 APP_ID='your app key'
 ```
 
