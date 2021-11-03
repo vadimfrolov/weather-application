@@ -18,6 +18,7 @@ weather-application
 │   ├── services                # services for data fetch
 │   ├── utils                  	# utils
 │   └── store            		    # redux store
-
+├── webpack                     # webpack settings
+├── tsconfig.json               # Typescript settings
 
 ```
