@@ -3,13 +3,13 @@
 .fetch-data-button {
   background-color: #51557A;
   border: 2px solid #1A1A1A;
-  border-radius: 15px;
+  border-radius: $border-rad;
   color: $color-white;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
   min-height: 60px;
-  min-width: 50px;
+  min-width: $minimal-size;
   max-width: 200px;
   margin-left: 47vw;
   margin-top: 40vh;

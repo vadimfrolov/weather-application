@@ -1,7 +1,7 @@
 .big-weather-icon {
-  min-width: 50px;
+  min-width: $minimal-size;
   max-width: 500px;
-  min-height: 50px;
+  min-height: $minimal-size;
   max-height: 500px;
   position: relative;
 
