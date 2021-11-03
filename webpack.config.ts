@@ -3,6 +3,7 @@ import {Configuration, DefinePlugin} from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const Dotenv = require('dotenv-webpack');
 
@@ -34,9 +35,9 @@ const webpackConfig = (): Configuration => ({
         exclude: /build/,
       },
       {
-        test: /\.s?css$/,
-        use: ['style-loader', 'css-loader'],
-      },
+        test: /\.(s(a|c)ss)$/,
+        use: [MiniCssExtractPlugin.loader,'css-loader', 'sass-loader']
+     },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
@@ -52,6 +53,7 @@ const webpackConfig = (): Configuration => ({
     historyApiFallback: true,
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),

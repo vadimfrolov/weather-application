@@ -1,0 +1,21 @@
+.big-weather-icon {
+  min-width: 50px;
+  max-width: 500px;
+  min-height: 50px;
+  max-height: 500px;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+

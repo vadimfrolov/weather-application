@@ -1,13 +1,27 @@
-$roboto-font-path: '../fonts';
+$font-name-regular: 'Roboto';
+$font-path-regular: '../fonts/Roboto-Regular.woff2';
+$font-weight-regular: 400;
+$font-style-regular: normal;
 
-@font-face {
-  src: url(#{$roboto-font-path}/Roboto-Regular.woff2) format('woff2');
-  font-family: 'Roboto';
-  font-weight: 400;
+@mixin font-face($font-name-regular, $font-path-regular, $font-weight-regular, $font-style-regular) {
+  @font-face {
+    font-family: $font-name-regular;
+    src: url(#{$font-path-regular});
+    font-weight-regular: $font-weight;
+    font-style: $font-style-regular;
+  }
 }
 
-@font-face {
-  src: url(#{$roboto-font-path}/Roboto-Bold.woff2) format('woff2');
-  font-family: 'Roboto';
-  font-weight: 700;
+$font-name-bold: 'Roboto';
+$font-path-bold: '../fonts/Roboto-Bold.woff2';
+$font-weight-bold: 700;
+$font-style-bold: normal;
+
+@mixin font-face($font-name-bold, $font-path-bold, $font-weight-bold, $font-style-bold) {
+  @font-face {
+    font-family: $font-name;
+    src: url(#{$font-path-bold});
+    font-weight: $font-weight-bold;
+    font-style: $font-style-bold;
+  }
 }

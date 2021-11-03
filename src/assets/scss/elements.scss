@@ -1,5 +1,101 @@
+@import './variables.scss';
+
 .wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 10px;
+}
+
+.center-line {
+  flex-wrap: wrap;
+}
+
+.down-line {
+  overflow-x: scroll;
+}
+
+.day-card-option {
+  display: grid;
+  font-size: clamp(6px, 4vw, 22px);
+  margin: 5px;
+  width: 250px;
+  height: 200px;
+  border-radius: $border-rad;
+  color: $color-white;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  p {
+    margin: auto;
+  }
+}
+
+.big-city-date-card {
+  display: grid;
+  min-width: 50px;
+  max-width: 400px;
+  min-height: 400px;
+  max-height: 500px;
+
+  p {
+    font-size: clamp(25px, 4vw, 50px);
+    font-weight: 700;
+    color: $color-white;
+
+    p {
+      font-size: clamp(10px, 4vw, 25px);
+      color: #a8aabd;
+      margin-bottom: 5vh;
+    }
+  }
+}
+
+.big-weather-card {
+  padding: 20px;
+  color: $color-white;
+  min-width: 50px;
+  max-width: 500px;
+  min-height: 50px;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  font-size: 25px;
+
+  .left-top {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .right-top {
+    grid-column: 3 / 3;
+    grid-row: 1;
+  }
+
+  .center {
+    font-size: 100px;
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+}
+
+.hour-weather-card {
+  font-size: clamp(10px, 4vw, 25px);
+  display: grid;
+  color: $color-white;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: $border-rad;
+
+  &:hover {
+    background-color: $color-hover;
+  }
 }

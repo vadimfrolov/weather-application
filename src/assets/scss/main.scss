@@ -1,8 +1,11 @@
 @import './elements.scss';
 @import './fonts.scss';
+@import "./variables.scss";
+@import "./icons.scss";
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: $font-stack;
+  background-color: $color-violet;
   margin: 0;
   padding: 0;
 }
