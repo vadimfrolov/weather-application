@@ -11,7 +11,7 @@ weather-application
 ├── node_modules                # Global Node.js modules
 ├── src                    	# Available packages
 │   ├── assets                  # images, fonts and styles
-│   ├── axios               # axios config
+│   ├── axios                 # axios config
 │   ├── components              # app components
 │   ├── nginx                  	# nginx config and Dockerfile
 │   ├── pages                  	# app pages
