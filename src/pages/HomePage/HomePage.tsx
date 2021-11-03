@@ -8,9 +8,11 @@ import BigWeatherCard from '../../components/BigWeatherCard/BigWeatherCard';
 import HourWeatherCard from '../../components/HourWeatherCard/HourWeatherCard';
 import ButtonFetchData from '../../components/ButtonFetchData/ButtonFetchData';
 
+import LocalDateFromat from '../../utils/LocaleDateFormat/LocalDateFormat';
+
 import {fetchCurrentWeather} from '../../store/thunks/fetchCurrentWeather';
 import {RootState} from '../../store/store';
-import {WeatherListItem} from '../../store/types/types';
+import {WeatherListItem, CurrentDateInterface} from '../../store/types/types';
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -20,11 +22,6 @@ const Homepage = () => {
   };
 
   const weatherData = useSelector((state: RootState) => state.currentWeatherSliceReduser.weather);
-
-  interface CurrentDateInterface {
-    rawDate: string;
-    date: string;
-  }
 
   const [currentDate, setCurrentDate] = useState<CurrentDateInterface>({
     rawDate: '',
@@ -73,11 +70,7 @@ const Homepage = () => {
               key={item.dt}
               rawTime={item.dt_txt}
               clickAction={setCurrentDate}
-              dayOfTheWeek={new Date(item.dt_txt).toLocaleDateString('en-GB', {
-                weekday: 'long',
-                month: 'long',
-                day: 'numeric',
-              })}
+              dayOfTheWeek={LocalDateFromat(item.dt_txt)}
             />
           ))}
       </div>

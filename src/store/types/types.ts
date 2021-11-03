@@ -46,3 +46,8 @@ export type WeatherListItem = {
   };
   dt_txt: string;
 };
+
+export type CurrentDateInterface = {
+  rawDate: string;
+  date: string;
+};
