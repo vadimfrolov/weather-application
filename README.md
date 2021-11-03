@@ -9,7 +9,7 @@ weather-application
 
 ├── .husky                      # pre-commit config
 ├── node_modules                # Global Node.js modules
-├── src                    	 # Available packages
+├── src                    	# Available packages
 │   ├── assets                  # images, fonts and styles
 │   ├── axios                   # axios config
 │   ├── components              # app components
