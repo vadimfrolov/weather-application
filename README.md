@@ -42,7 +42,7 @@ APP_ID='your app key'
 docker-compose up --build
 ```
 
-3. Check the websile in your browser
+3. Check the website in your browser
 
 ```
 http://localhost:3000/
