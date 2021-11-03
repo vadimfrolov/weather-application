@@ -23,9 +23,9 @@ Verify if you use Node.js 6.x or higher (Node.js ^10 is recommended) and Docker 
 
 1. Clone the stable branch
 
-```git
+```
 git clone -b git@github.com:vadimfrolov/weather-application.git
-weather-application
+cd weather-application
 ```
 
 2. Create .env in root folder file with your key
@@ -37,7 +37,7 @@ APP_ID='your app key'
 
 3. Run Docker
 
-```docker
+```
 docker-compose up --build
 ```
 
