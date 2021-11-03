@@ -8,7 +8,7 @@ import BigWeatherCard from '../../components/BigWeatherCard/BigWeatherCard';
 import HourWeatherCard from '../../components/HourWeatherCard/HourWeatherCard';
 import ButtonFetchData from '../../components/ButtonFetchData/ButtonFetchData';
 
-import LocalDateFromat from '../../utils/LocaleDateFormat/LocalDateFormat';
+import LocalDateFromat from '../../utils/LocaleDateFormat/LocaleDateFormat';
 
 import {fetchCurrentWeather} from '../../store/thunks/fetchCurrentWeather';
 import {RootState} from '../../store/store';
