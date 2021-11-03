@@ -1,9 +1,7 @@
 # weather-application
 A simple `weather-application` capable of fetching and visualising 5 days weather forecast data with 3-hour step.
 
-<img alt="image" src="https://im7.ezgif.com/tmp/ezgif-7-ba03ca661f08.gif"> </img>
 <img alt="image" src="app.gif"> </img>
-![](app.gif)
 
 ## Tech stack
 
@@ -17,6 +15,7 @@ A simple `weather-application` capable of fetching and visualising 5 days weathe
 - [lint-staged](https://github.com/okonet/lint-staged/)
 - [Prettier](https://prettier.io/)
 - [Eslint](https://eslint.org/)
+- [Jest](https://jestjs.io/)
 - [Open Weather Map API](https://openweathermap.org/forecast5)
 
 ## How to run
@@ -43,6 +42,12 @@ APP_ID='your app key'
 docker-compose up --build
 ```
 
+3. Check the websile in your browser
+
+```
+http://localhost:3000/
+```
+
 
 ## Project structure
 ```bash
@@ -65,6 +70,8 @@ weather-application
 ```
 
 ## Road map
+- [ ] add more tests
+- [ ] add aliases for roots
 - [ ] add city input
 - [ ] create demo on Heroku
 - [ ] create Gitlab CI/CD pipeline to Github actions and dockerhub registry.
