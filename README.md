@@ -3,6 +3,15 @@ A simple `weather-application` capable of fetching and visualising data
 
 <img alt="Awesome GitHub Profile Readme" src="https://im7.ezgif.com/tmp/ezgif-7-ba03ca661f08.gif"> </img>
 
+## Tech stack
+
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Webpack](https://webpack.js.org/)
+- [lint-staged](https://github.com/okonet/lint-staged/)
+- [Axios](https://github.com/axios/axios)
+
+
 ## Project structure
 ```bash
 weather-application
