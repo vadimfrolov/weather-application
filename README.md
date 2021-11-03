@@ -19,7 +19,7 @@ A simple `weather-application` capable of fetching and visualising data forecast
 
 ## How to run
 
-Verify if you use Node.js 6.x or higher (Node.js ^10 is recommended) before running the starter kit.
+Verify if you use Node.js 6.x or higher (Node.js ^10 is recommended) and Docker before start.
 
 1. Clone the stable branch
 
