@@ -42,10 +42,16 @@ APP_ID='your app key'
 docker-compose up --build
 ```
 
-3. Check the website in your browser
+4. Check the website in your browser
 
 ```
 http://localhost:3000/
+```
+
+5. To stop docker containers
+
+```
+docker-compose stop
 ```
 
 ## How to run tests
