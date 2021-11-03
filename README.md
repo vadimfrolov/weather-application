@@ -17,6 +17,23 @@ A simple `weather-application` capable of fetching and visualising data forecast
 - [Eslint](https://eslint.org/)
 - [Open Weather Map API](https://openweathermap.org/forecast5)
 
+## How to run
+
+Verify if you use Node.js 6.x or higher (Node.js ^10 is recommended) before running the starter kit.
+
+1. Clone the stable branch
+
+```
+git clone -b git@github.com:vadimfrolov/weather-application.git
+weather-application
+```
+
+2. Create .env in root folder file with your key
+
+```typescript
+  APP_ID='your app key'
+```
+
 
 ## Project structure
 ```bash
