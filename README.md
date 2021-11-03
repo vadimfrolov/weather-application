@@ -9,6 +9,8 @@ A simple `weather-application` capable of fetching and visualising data forecast
 - [React](https://reactjs.org/)
 - [Webpack](https://webpack.js.org/)
 - [lint-staged](https://github.com/okonet/lint-staged/)
+- [Docker](https://www.docker.com/)
+- [Nginx](https://www.nginx.com/)
 - [Axios](https://github.com/axios/axios)
 - [Open Weather Map API](https://openweathermap.org/forecast5)
 
