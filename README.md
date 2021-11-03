@@ -7,6 +7,7 @@ A simple `weather-application` capable of fetching and visualising data forecast
 
 - [Typescript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Webpack](https://webpack.js.org/)
 - [Docker](https://www.docker.com/)
 - [Nginx](https://www.nginx.com/)
