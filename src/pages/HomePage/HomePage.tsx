@@ -58,8 +58,6 @@ const Homepage = () => {
     [memoizedTemperature, currentHour]
   );
 
-  console.log(memoizedHourData);
-
   return (
     <>
       {weatherData.list === null && <ButtonFetchData fetchWeatherData={fetchData} />}

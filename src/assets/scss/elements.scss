@@ -37,18 +37,18 @@
 
 .big-city-date-card {
   display: grid;
-  min-width: 50px;
-  max-width: 400px;
+  min-width: $minimal-size;
+  max-width: 350px;
   min-height: 260px;
-  max-height: 500px;
+  max-height: $max-size;
 
   p {
-    font-size: clamp(25px, 4vw, 50px);
+    font-size: clamp($font-middle-size, 4vw, $minimal-size);
     font-weight: 700;
     color: $color-white;
 
     p {
-      font-size: clamp(10px, 4vw, 25px);
+      font-size: clamp(10px, 4vw, $font-middle-size);
       color: #a8aabd;
       margin-bottom: 5vh;
     }
@@ -58,16 +58,16 @@
 .big-weather-card {
   padding: 20px;
   color: $color-white;
-  min-width: 50px;
-  max-width: 500px;
-  min-height: 50px;
-  max-height: 500px;
+  min-width: $minimal-size;
+  max-width: $max-size;
+  min-height: $minimal-size;
+  max-height: $max-size;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 
-  font-size: clamp(15px, 4vw, 25px);
+  font-size: clamp(15px, 4vw, $font-middle-size);
 
   .left-top {
     grid-column: 1 / 3;
@@ -80,7 +80,7 @@
   }
 
   .center {
-    font-size: clamp(25px, 4vw, 100px);
+    font-size: clamp($font-middle-size, 4vw, 100px);
     grid-column: 2;
     grid-row: 2;
   }
