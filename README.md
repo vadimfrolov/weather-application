@@ -17,7 +17,7 @@ weather-application
 │   ├── pages                  	# app pages
 │   ├── services                # services for data fetch
 │   ├── utils                  	# utils
-└─  └── store            		    # redux store
+└─  └── store            		# redux store
 
 
 ```
