@@ -29,7 +29,7 @@ git clone -b git@github.com:vadimfrolov/weather-application.git
 cd weather-application
 ```
 
-2. Create .env in root folder file with your key
+2. Create .env file in root folder with your key
 
 ```typescript
 APP_ID='your app key'
