@@ -18,6 +18,6 @@ weather-application
 │   ├── services                # services for data fetch
 │   ├── utils                  	# utils
 │   └── store            		    # redux store
-└─
+
 
 ```
