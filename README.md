@@ -18,7 +18,7 @@ A simple `weather-application` capable of fetching and visualising 5 days weathe
 - [Jest](https://jestjs.io/)
 - [Open Weather Map API](https://openweathermap.org/forecast5)
 
-## How to run
+## How to run application
 
 Verify if you use Node.js 6.x or higher (Node.js ^10 is recommended) and Docker before start.
 
@@ -46,6 +46,22 @@ docker-compose up --build
 
 ```
 http://localhost:3000/
+```
+
+## How to run tests
+
+Verify if you use Node.js 6.x or higher (Node.js ^10 is recommended).
+
+1. Install npm packages
+
+```
+npm i
+```
+
+2. Run tests
+
+```
+npm run test
 ```
 
 
