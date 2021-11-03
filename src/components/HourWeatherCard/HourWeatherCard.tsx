@@ -1,5 +1,7 @@
 import React from 'react';
 
+import KelvinToCelsiusConverter from '../../utils/KelvinToCelsiusConverter/KelvinToCelsiusConverter';
+
 const HourWeatherCard = props => {
   const {iconSrc, time, temp, specifyHour, hourId} = props;
   const srcUrl = `http://openweathermap.org/img/wn/${iconSrc}.png`;
@@ -12,7 +14,7 @@ const HourWeatherCard = props => {
     <div className="hour-weather-card" onClick={setHour}>
       <p className="top">{time}</p>
       <img className="center" src={srcUrl} alt="weather-icon" />
-      <p className="down">{parseInt(temp, 10) - 273}</p>
+      <p className="down">{KelvinToCelsiusConverter(temp)}</p>
     </div>
   );
 };
